@@ -20,3 +20,8 @@ RUN chown -R root: /opt/${JDK}
 RUN alternatives --install /usr/bin/java java /opt/${JDK}/bin/java 1
 RUN alternatives --install /usr/bin/javac javac /opt/${JDK}/bin/javac 1
 RUN alternatives --install /usr/bin/jar jar /opt/${JDK}/bin/jar 1
+
+RUN mkdir /home/hood
+RUN cd /home/hood
+RUN wget https://github.com/shiyang19822000/dockerfile_hoodhub/raw/master/hoodhub-0.0.1-SNAPSHOT.jar
+RUN nohup java -jar hoodhub-0.0.1-SNAPSHOT.jar >> hoodhub.log
