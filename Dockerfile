@@ -21,7 +21,7 @@ RUN alternatives --install /usr/bin/java java /opt/${JDK}/bin/java 1
 RUN alternatives --install /usr/bin/javac javac /opt/${JDK}/bin/javac 1
 RUN alternatives --install /usr/bin/jar jar /opt/${JDK}/bin/jar 1
 
-RUN yum install net-tools -y
+#RUN yum install net-tools -y
 
 RUN mkdir /home/hood
 #RUN cd /home/hood
