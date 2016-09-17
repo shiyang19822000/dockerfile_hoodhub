@@ -29,5 +29,5 @@ RUN wget https://github.com/shiyang19822000/dockerfile_hoodhub/raw/master/hoodhu
 #RUN nohup java -jar /home/hood/hoodhub-0.0.1-SNAPSHOT.jar >> /home/hood/hoodhub.log &
 #RUN touch /home/hood/hoodhub.log
 #CMD ["nohup java -jar /home/hood/hoodhub-0.0.1-SNAPSHOT.jar >> /home/hood/hoodhub.log &"]
-#RUN nohup java -jar /home/hood/hoodhub-0.0.1-SNAPSHOT.jar > /home/hood/hoodhub.log &
+#RUN nohup java -jar /home/hood/hoodhub-0.0.1-SNAPSHOT.jar > /home/hood/hoodhub.log 2>&1 &
 RUN java -jar /home/hood/hoodhub-0.0.1-SNAPSHOT.jar
