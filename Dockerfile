@@ -8,7 +8,7 @@ ENV JBUILD b13
 ENV JED ${JVER}u${JUPD}
 ENV JDK jdk1.${JVER}.0_${JUPD}
 
-#RUN yum update -y
+RUN yum update -y
 RUN yum install -y \
     tar \
     wget
